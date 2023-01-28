@@ -1,0 +1,231 @@
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+/*barre de navigation*/
+
+.content{
+	max-width: 1250px;
+	margin: auto;
+	padding: 0px 30px;
+}
+
+.navbar{
+	position: fixed;
+	z-index: 5;
+	width: 100%;
+	padding: 10px 0;
+	background: #152744;
+}
+
+.navbar .content{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.navbar .logo a{
+	color: #fff;
+	font-size: 30px;
+	font-weight: 600;
+	text-decoration: none;
+}
+
+.navbar .menu-list{
+	display: inline-flex;
+}
+
+.menu-list li{
+	list-style: none;
+}
+
+.menu-list li a{
+	color: #fff;
+	font-size: 18px;
+	font-weight: 500;
+	margin-left: 25px;
+	text-decoration: none;
+	transition: all 0.3s ease;
+}
+
+.menu-list li a:hover{
+	color: cyan;
+}
+
+.menu-list li input{
+	color: black;
+	font-size: 18px;
+	font-weight: 500;
+	margin-left: 25px;
+	text-decoration: none;
+}
+
+
+/*banniere*/
+
+.banner{
+	height: 100vh;
+	background: url("img/banner.jpg") no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+/*a propos*/
+.about{
+	padding: 40px 0;
+}
+
+
+.about .title{
+	font-size: 35px;
+	font-weight: 700;
+}
+
+.about p{
+	padding-top: 20px;
+	text-align: justify;
+}
+
+
+
+
+/* produits */
+.product{
+    padding: 5rem 0;
+}
+.product-title{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.product-item{
+    border-radius: 1rem;
+    margin: 5rem 0;
+    padding: 1.5rem 0;
+    text-align: center;
+    position: relative;
+    transition: all 0.5s ease-in-out;
+}
+.product-item:hover{
+    background: #f1f1f1;
+}
+.product-item:first-of-type{
+    margin-top: 2rem;
+}
+.product-item:last-of-type{
+    margin-bottom: 2rem;
+}
+.product-item img{
+    width: 160px;
+    margin: 0 auto;
+}
+.product-info{
+    padding: 2rem;
+}
+.product-info h4{
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+.product-info .text{
+    color: #534a4b;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+}
+.new-btn{
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+    font-size: 1rem;
+    border: none;
+    background: #367591;
+    color: #fff;
+    padding: 0.5rem 1.6rem;
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+}
+.new-btn:hover{
+    opacity: 0.8;
+}
+.add-btn{
+    border-radius: 1.3rem;
+    border: none;
+    padding: 0.7rem 1.8rem;
+    background: #367591;
+    font-size: 1rem;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 50%);
+    transition: all 0.5s ease-in-out;
+}
+.add-btn:hover{
+    background: #152744;
+}
+
+/*footer*/
+
+
+
+.footer_container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #24262b;
+    padding: 70px 0;
+}
+.column{
+   width: 25%;
+   padding: 0 15px;
+}
+.column h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.column h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.column ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.column ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.column ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
